@@ -1,0 +1,782 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(fonts/NotoSans-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 20px;
+    background-color: #020060;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.warning {
+    text-align: center;
+}
+
+.warning p {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.styled {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.styled h1 {
+    font-weight: bold;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.styled h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    background-color: #020060;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: #020060;
+    background-color: white;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    justify-content: center;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    justify-content: center;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.grid-sobre {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    justify-content: center;
+}
+
+.grid-help {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.descricao, .icones {
+    text-align: center;
+}
+
+.descricao {
+    margin: 20px;
+}
+
+.descricao > h1 {
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.descricao > p {
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+.descricao-sobre > h1 {
+    font-family: "Montserrat";
+    font-weight: lighter;
+}
+
+.descricao-sobre > h1, .descricao-sobre > p {
+    margin: 20px;
+    text-align: justify;
+}
+
+.descricao-sobre > p {
+    margin: 20px 40px;
+    text-align: justify;
+}
+
+.descricao-sobre p > i {
+    font-size: normal;
+    text-align: justify;
+}
+
+.icones > .column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+
+.column > i {
+    font-size: 100px;
+    margin: 10px 40px;
+    text-align: center;
+    padding: 10px;
+    animation: 1s transformColors ease-in-out infinite;
+    color: #020060;
+}
+
+@keyframes transformColors {
+    from {
+        background-color: #e7e7e7;
+        color: #e7e7e7;
+    }
+
+    to {
+        background-color: #e7e7e7;
+        color: #020060;
+    }
+}
+
+h1.title {
+    text-align: center;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+}
+
+#projects, #p1, #p2, #p3, #p4 {
+    padding: 60px 0px;
+    background-color: white;
+    color: black;
+}
+
+.imagem > img {
+    border: 2px solid black;
+    margin: 30px;
+}
+
+.imagem2 > img {
+    border: 2px solid black;
+}
+
+.right > img {
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.imagem-perfil > img {
+    border: 2px solid black;
+    margin-left: 55px;
+}
+
+.tecs {
+    background-color: white;
+    color: #020060;
+    margin: 0px;
+    text-align: justify;
+    margin: 0px;
+}
+
+.tecs > i {
+    font-size: 40px;
+    margin: 0px 10px;
+}
+
+.link-site {
+    color: #e7e7e7;
+}
+
+.botao {
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.btn-site {
+    background-color: #020060;
+    color: white;
+    border: 2px solid #e7e7e7;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#about-me {
+    padding: 60px 0px;
+    background-color: #020060;
+    color: white;
+}
+
+#skills {
+    padding: 60px 0px;
+    background-color: black;
+    color: white;
+}
+
+.comp {
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.comp > h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.comp > i {
+    margin: 10px 0px;
+    font-size: 60px;
+}
+
+#suport {
+    padding: 60px 0px;
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.suport {
+    text-align: center;
+    background-color: #020060;
+    color: white;
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.suport > i {
+    font-size: 50px;
+    margin: 10px 0px;
+}
+
+.suport > h2 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+#contact {
+    padding: 60px 0px;
+}
+
+form {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+input.nome, input.email, input.telefone {
+    margin: 5px 0px;
+    padding: 10px;
+    width: 280px;
+    height: 28px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    margin: 5px 0px;
+    padding: 10px;
+    width: 280px;
+    height: 280px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+footer {
+    padding: 60px 0px;
+    background-color: #020060;
+    color: white;
+}
+
+.secrodape1, .secrodape2, .secrodape3 {
+    text-align: center;
+}
+
+.secrodape1 > h1 {
+    text-align: center;
+} 
+
+.secrodape1 > p {
+    text-align: justify;
+    margin: 10px 30px;
+}
+
+.secrodape2 > hr, .secrodape3 > hr {
+    margin: 0px 60px;
+    text-align: center;
+}
+
+.lista-secoes {
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.lista-secoes > li {
+    margin: 5px 0px;
+}
+
+.secao {
+    text-decoration: underline;
+    color: white;
+}
+
+nav.redes-sociais {
+    justify-content: center;
+}
+
+nav.redes-sociais a > i {
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 470px) {
+.styled > h1 {
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    background-color: #020060;
+    flex-direction: column;
+}
+
+.grid1 {
+    grid-template-columns: auto;
+}
+
+.grid2 {
+    grid-template-columns: auto;
+}
+
+.grid3 {
+    grid-template-columns: auto;
+}
+
+.grid-sobre {
+    grid-template-columns: auto;
+}
+
+.grid-help {
+    grid-template-columns: auto;
+}
+
+.icones > .column {
+    grid-template-columns: auto;
+}
+
+.column > i {
+    font-size: 50px;
+}
+
+.imagem > img {
+    display: block;
+    margin: 0px auto;
+    width: 260px;
+    height: 148px;
+}
+
+.imagem2 > img {
+    display: block;
+    margin: 0px auto;
+    width: 260px;
+    height: 148px;
+}
+
+.right > img {
+    display: block;
+    margin: 0px auto;
+    width: 260px;
+    height: 148px;
+}
+
+.imagem-perfil > img {
+    margin: 0px auto;
+    display: block;
+    width: 280px;
+    height: 281px;
+}
+
+.descricao-sobre > h1 {
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: center;
+}
+
+.comp {
+    padding: 10px auto;
+}
+
+form {
+    text-align: center;
+    margin: 10px auto;
+}
+
+input.nome, input.email {
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    height: 280px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+input.btn-submit {
+    width: 225px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    background-color: #020060;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+nav.redes-sociais {
+    justify-content: center;
+    display: block;
+}
+
+nav.redes-sociais a > i {
+    font-size: 20px;
+    display: block;
+    margin: 5px;
+    color: white;
+}
+
+hr {
+    text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+.navbar {
+    display: flex;
+    background-color: #020060;
+    flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 540px) {
+.styled > h1 {
+    font-size: 20px;
+}
+
+.grid1 {
+    grid-template-columns: auto;
+}
+
+.grid2 {
+    grid-template-columns: auto;
+}
+
+.grid3 {
+    grid-template-columns: auto;
+}
+
+.grid-sobre {
+    grid-template-columns: auto;
+}
+
+.grid-help {
+    grid-template-columns: auto;
+}
+
+.icones > .column {
+    grid-template-columns: auto;
+}
+
+.column > i {
+    font-size: 50px;
+}
+
+.imagem > img {
+    display: block;
+    margin: 0px auto;
+    width: 260px;
+    height: 148px;
+}
+
+.imagem2 > img {
+    display: block;
+    margin: 0px auto;
+    width: 260px;
+    height: 148px;
+}
+
+.right > img {
+    display: block;
+    margin: 0px auto;
+    width: 260px;
+    height: 148px;
+}
+
+.imagem-perfil > img {
+    margin: 0px auto;
+    display: block;
+    width: 280px;
+    height: 281px;
+}
+
+.descricao-sobre > h1 {
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: center;
+}
+
+.comp {
+    padding: 10px auto;
+}
+
+form {
+    text-align: center;
+    margin: 10px auto;
+}
+
+input.nome, input.email {
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    height: 280px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+input.btn-submit {
+    width: 225px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    background-color: #020060;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+nav.redes-sociais {
+    justify-content: center;
+    display: block;
+}
+
+nav.redes-sociais > a {
+    text-decoration: none;
+}
+
+nav.redes-sociais a > i {
+    font-size: 30px;
+    display: block;
+    margin: 10px 0px;
+    color: white;
+}
+
+hr {
+    text-align: center;
+}
+
+.secrodape1 > .title, .secrodape2 > .title, .secrodape3 > .title {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 850px) {
+.styled > h1 {
+    font-size: 20px;
+}
+
+.grid1 {
+    grid-template-columns: auto;
+}
+
+.grid2 {
+    grid-template-columns: auto;
+}
+
+.grid3 {
+    grid-template-columns: auto;
+}
+
+.grid-sobre {
+    grid-template-columns: auto;
+}
+
+.grid-help {
+    grid-template-columns: auto;
+}
+
+.icones > .column {
+    grid-template-columns: auto;
+}
+
+.column > i {
+    font-size: 50px;
+}
+
+.imagem > img {
+    display: block;
+    margin: 0px auto;
+    width: 350px;
+    height: 197px;
+}
+
+.imagem2 > img {
+    display: block;
+    margin: 0px auto;
+    width: 350px;
+    height: 197px;
+}
+
+.right > img {
+    display: block;
+    margin: 0px auto;
+    width: 350px;
+    height: 197px;
+}
+
+.imagem-perfil > img {
+    margin: 0px auto;
+    display: block;
+    width: 280px;
+    height: 281px;
+}
+
+.descricao-sobre > h1 {
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: center;
+}
+
+.comp {
+    padding: 10px auto;
+}
+
+form {
+    text-align: center;
+    margin: 10px auto;
+}
+
+input.nome, input.email {
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    height: 20px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    height: 280px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+input.btn-submit {
+    width: 225px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    background-color: #020060;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+nav.redes-sociais {
+    justify-content: center;
+    display: block;
+}
+
+nav.redes-sociais > a {
+    text-decoration: none;  
+}
+
+nav.redes-sociais a > i {
+    font-size: 30px;
+    display: block;
+    margin: 10px 0px;
+    color: white;
+}
+
+hr {
+    text-align: center;
+}
+
+.secrodape1 > .title, .secrodape2 > .title, .secrodape3 > .title {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    }
+}
+
