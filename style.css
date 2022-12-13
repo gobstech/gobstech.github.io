@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url(fonts/NotoSans-Regular.ttf) format("truetype");
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    background-color: #004aad;
+
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.main {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.9;
+    border: 2px solid black;
+    position: absolute;
+    top: 5vh;
+}
+
+.main.active {
+    background-color: black;
+    color: white;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.icon {
+    background-color: white;
+    border: 1px solid black;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    border-radius: 50%;
+}
+
+.icon.active {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btns > a {
+    margin: 2px 0px;
+}
+
+.btn-default {
+    padding: 5px;
+    width: 200px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btn-default:hover {
+    background-color: #004aad;
+    color: white;
+}
+
